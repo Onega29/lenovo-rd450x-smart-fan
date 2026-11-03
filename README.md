@@ -50,6 +50,7 @@ sudo systemctl status cpu_temp_monitor.service
 
 ## Конфигурация / Configuration
 Вы можете изменить пороги температур и шаги плавности в самом начале файла `/usr/local/bin/cpu_temp_monitor.sh`:
+* `LOG_FILE` — LOG - файл. По умолчанию отключен. Чтоб включить поменяйте строчку на LOG_FILE="/var/log/cpu_temp_monitor.log"
 * `TEMP_MIN` / `TEMP_MAX` — температурный диапазон работы.
 * `MIN_FAN` / `MAX_FAN` — границы скорости вентиляторов в %.
 * `MAX_STEP` — максимальный шаг снижения оборотов (по умолчанию 10%).
